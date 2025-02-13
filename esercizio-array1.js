@@ -6,15 +6,15 @@ Variante:
 Prova ad ordinali in modo crescente.*/ 
 
 let numbers = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25]
-function compareNumbers(a, b) {
-    return a - b;
-}
+let sort1 = numbers.sort((a , b)=> b - a );
 
-let ordineCrescente = numbers.sort(compareNumbers);
-console.log(ordineCrescente);
-let ordineDecrescente = numbers.sort(compareNumbers).reverse();
+console.log(sort1);
 
-console.log(ordineDecrescente);
+
+let sort2 = numbers.sort((a , b)=> a - b );
+
+
+console.log(sort2);
 
 
 
